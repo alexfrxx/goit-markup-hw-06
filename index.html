@@ -474,8 +474,81 @@
               </li>
             </ul>
           </div>
+          <div class="footer-form-wrapper">
+            <p class="socials-title">Subscribe</p>
+            <form class="footer-form">
+              <label for="footer-email" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                id="footer-email"
+                name="footer-email"
+                placeholder="E-mail"
+                class="footer-input"
+              />
+              <button type="submit" class="footer-form-btn">
+                Subscribe
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#subscribe"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <div class="modal-wrapper is-active">
+      <div class="form-wrapper">
+        <button type="button" class="modal-close-btn">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <p class="form-title">
+            Leave your contacts and we will call you back
+          </p>
+          <div class="form-data">
+            <div class="form-text-wrap">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" />
+            </div>
+            <div class="form-text-wrap">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" id="phone" name="phone" class="form-input" />
+            </div>
+            <div class="form-text-wrap">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" />
+            </div>
+            <div class="form-text-wrap">
+              <label for="text" class="form-label">Comment</label>
+              <textarea
+                type="text"
+                id="text"
+                name="text"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox" class="visually-hidden" />
+            <svg width="16" height="16" class="icon-empty">
+              <use href="./images/icons.svg#checkbox"></use>
+            </svg>
+            <svg width="16" height="16" class="icon-checked">
+              <use href="./images/icons.svg#checked"></use>
+            </svg>
+            <span class="form-label"
+              >I accept the terms and conditions of the
+              <a href="" class="checkbox-link">Privacy Policy</a></span
+            >
+          </label>
+        </form>
+        <div class="form-btn-wrapper">
+          <button type="submit" class="form-btn">Send</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
