@@ -405,6 +405,11 @@ p {
   color: #ffffff;
 }
 
+.footer-container-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .icon:hover {
   fill: #31d0aa;
 }
@@ -417,10 +422,18 @@ p {
 .footer-input {
   padding: 8px 16px;
   outline: none;
+  width: 264px;
+  align-self: flex-end;
+  height: 40px;
   background-color: transparent;
   border: 1px solid #fff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.04em;
+  line-height: 2;
+  font-weight: 400;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -434,6 +447,7 @@ p {
   color: #fff;
   letter-spacing: 0.04em;
   line-height: 2;
+  font-weight: 400;
 }
 
 .footer-form-btn {
@@ -462,11 +476,10 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  padding-top: 80px;
   display: none;
   background-color: rgba(46, 47, 66, 0.4);
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .form-wrapper {
@@ -545,9 +558,19 @@ textarea::placeholder {
   font-weight: 400;
 }
 
+.input-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-input:hover,
 .form-input:focus {
   border: 1px solid #4d5ae5;
+}
+
+.form-input:hover .input-icon,
+.form-input:focus .input-icon {
+  fill: #4d5ae5;
 }
 
 textarea:hover,
@@ -555,7 +578,7 @@ textarea:focus {
   border: 1px solid #4d5ae5;
 }
 
-.is-active {
+.is-open {
   display: flex;
 }
 
@@ -585,6 +608,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 8px;
 }
 
 .form-btn:hover,
@@ -603,10 +627,6 @@ textarea:focus {
   display: none;
 }
 
-.checkbox input:checked ~ .icon-empty {
-  display: none;
-}
-
 .checkbox input:checked ~ .icon-checked {
   display: block;
 }
@@ -620,9 +640,33 @@ textarea:focus {
   position: absolute;
   top: 24px;
   right: 24px;
-  border: none;
   border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
   height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  box-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.08),
+    0 1px 1px rgba(0, 0, 0, 0.16),
+    0 2px 1px rgba(0, 0, 0, 0.08);
+}
+
+.modal-close-btn:hover .close-btn-icon,
+.modal-close-btn:focus .close-btn-icon {
+  fill: #fff;
 }
