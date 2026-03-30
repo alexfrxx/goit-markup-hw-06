@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 768px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -345,6 +345,15 @@ p {
   row-gap: 48px;
 }
 
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
 .portfolio-image-wrapper {
   position: relative;
   overflow: hidden;
@@ -546,6 +555,10 @@ p {
 
 .burger-link-active {
   color: #404bbf;
+}
+
+.number-active {
+  color: #4d5ae5;
 }
 
 .burger-socials {
@@ -881,11 +894,14 @@ textarea:focus {
   .features-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+  .container {
+    max-width: 768px;
+  }
 }
 
 @media (min-width: 1158px) {
   .portfolio-list {
-    row-gap: 40px;
+    row-gap: 48px;
   }
   p {
     font-weight: 400;
