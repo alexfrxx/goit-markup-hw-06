@@ -79,7 +79,7 @@ ul {
   position: relative;
 }
 
-.contact-list {
+.header-contact {
   display: none;
 }
 
@@ -860,6 +860,9 @@ textarea:focus {
   }
   .header {
     padding: 0;
+  }
+  .header-contact {
+    display: block;
   }
   .contact-list {
     display: flex;
